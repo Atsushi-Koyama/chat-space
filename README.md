@@ -32,8 +32,8 @@ Things you may want to cover:
 
 
 ### Association
-- has_many :group,through: members
-- has_many :massage
+- has_many :groups, through: members
+- has_many :massages
 - has_many :members
 
 
@@ -42,7 +42,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
-|image|integer|
+|image|text|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
