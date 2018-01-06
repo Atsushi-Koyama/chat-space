@@ -54,7 +54,7 @@ html, body{
     }
   }
 
-  .chat {
+  .chat-main {
     background-color: #FAFAFA;
     width: calc(100% - 300px);
     float: left;
@@ -99,6 +99,7 @@ html, body{
       &__message {
           margin: 40px 10px 10px 0px;
         &__messages {
+          padding-bottom: 40px;
           &__message {
           float: left;
           font-size: 16px;
