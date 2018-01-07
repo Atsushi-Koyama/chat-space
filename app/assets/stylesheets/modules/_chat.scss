@@ -1,0 +1,156 @@
+html, body{
+  height: 100%;
+
+  .chat-side {
+    background-color: #2f3e51;
+    height: 100%;
+    width: 300px;
+    float: left;
+    &__user {
+      background-color: #253141;
+      height: 15%;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      &__name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 100px;
+        color: $white;
+        display: inline-block;
+      }
+      &__edit-user {
+        display: inline-block;
+        color: $white;
+        float: right;
+        line-height: 100px;
+        padding-left: 5px;
+      }
+      &__new-group {
+        display: inline-block;
+        color: $white;
+        float: right;
+        line-height: 100px;
+      }
+    }
+    &__groups {
+      background-color: #2F3E51;
+      height: 85%;
+      padding: 0 20px;
+
+      &__group{
+      padding: 20px 0;
+
+        &__name {
+          font-size: 15px;
+          color: $white;
+        }
+        &__message {
+          font-size: 11px;
+          color: $white;
+          padding: 5px 0px 0px 0px;
+        }
+      }
+    }
+  }
+
+  .chat-main {
+    background-color: #FAFAFA;
+    width: calc(100% - 300px);
+    float: left;
+    height: 100%;
+    &__header {
+      height: 15%;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: #eeeeee;
+      box-sizing: border-box;
+      &__groups {
+        margin: 0px 40px;
+        &__left {
+          width: 100px;
+          display: inline-block;
+          &__name {
+          margin: 35px 0px 15px 0px;
+          font-size: 20px;
+          float: left;
+          }
+          &__member {
+          font-size: 12px;
+          }
+        }
+        &__right {
+          height: 40px;
+          float: right;
+          margin-top: 28px;
+          border: 1px solid $light_blue;
+          color: $light_blue;
+          padding:0 20px;
+          line-height: 40px;
+          &__edit-btn {
+          }
+        }
+      }
+    }
+    &__body {
+      height: calc(100% - 15% - 130px);
+      margin: 6px 40px 0px 40px;
+      box-sizing: border-box;
+      &__message {
+          margin: 40px 10px 10px 0px;
+        &__messages {
+          padding-bottom: 40px;
+          &__message {
+          float: left;
+          font-size: 16px;
+          margin-right: 10px;
+          font-weight: bold;
+          }
+          &__date {
+          float: left;
+          margin-bottom: 20px;
+          font-size: 12px;
+          }
+          &__low-message {
+          font-size: 14px;
+          clear: both;
+          }
+        }
+      }
+    }
+    &__footer{
+      background-color: #DDDDDD;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 40px 20px 40px;
+      &__form {
+        height: 50px;
+        width: calc(100% - 120px);
+        float: left;
+        background-color: $white;
+        &__message {
+        float: left;
+        line-height: 50px;
+        border-style: none;
+        width: 680px;
+        padding: 0 10px;
+        }
+        &__image {
+        float: right;
+        line-height: 50px;
+        padding-right: 10px;
+        }
+        &__send {
+        height: 50px;
+        float: right;
+        color: $white;
+        line-height: 50px;
+        background-color: $light_blue;
+        padding: 0 30px;
+        border-style: none;
+        margin-left: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.chat-side
+  .chat-side__user
+    .chat-side__user__name
+      %p current_user.name
+    .chat-side__user__edit-user
+      = fa_icon "cog"
+    .chat-side__user__new-group
+      = fa_icon "pencil-square-o"
+
+  .chat-side__groups
+    %ul.chat-side__groups__group
+      %li.chat-side__groups__group__name
+        %p group
+      %li.chat-side__groups__group__message
+        %p message
+
+    %ul.chat-side__groups__group
+      %li.chat-side__groups__group__name
+        %p group
+      %li.chat-side__groups__group__message
+        %p message
+
+.chat-main
+  .chat-main__header
+    .chat-main__header__groups
+      .chat-main__header__groups__left
+        .chat-main__header__groups__left__name
+          %p group
+        .chat-main__header__groups__left__member
+          %p member
+      .chat-main__header__groups__right
+        .chat-main__header__groups__right__edit-btn
+          %p Edit
+
+  .chat-main__body
+    .chat-main__body__message
+      %ul.chat-main__body__message__messages
+        %li.chat-main__body__message__messages__message
+          %p current_user.name
+        %li.chat-main__body__message__messages__date
+          %p 2018/01/03 04:43
+        %li.chat-main__body__message__messages__low-message
+          %p massage
+
+      %ul.chat-main__body__message__messages
+        %li.chat-main__body__message__messages__message
+          %p current_user.name
+        %li.chat-main__body__message__messages__date
+          %p 2018/01/03 04:43
+        %li.chat-main__body__message__messages__low-message
+          %p massage
+
+  .chat-main__footer
+    .chat-main__footer__form
+      %input.chat-main__footer__form__message{ type: "text", placeholder: "type a message"}
+      .chat-main__footer__form__image
+        = fa_icon "picture-o"
+    .chat-main__footer__form__send
+      = "Send"
