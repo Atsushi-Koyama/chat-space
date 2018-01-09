@@ -1,59 +1,6 @@
 html, body{
   height: 100%;
 
-  .chat-side {
-    background-color: #2f3e51;
-    height: 100%;
-    width: 300px;
-    float: left;
-    &__user {
-      background-color: #253141;
-      height: 15%;
-      width: 100%;
-      padding: 0 20px;
-      box-sizing: border-box;
-      &__name {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 100px;
-        color: $white;
-        display: inline-block;
-      }
-      &__edit-user {
-        display: inline-block;
-        color: $white;
-        float: right;
-        line-height: 100px;
-        padding-left: 5px;
-      }
-      &__new-group {
-        display: inline-block;
-        color: $white;
-        float: right;
-        line-height: 100px;
-      }
-    }
-    &__groups {
-      background-color: #2F3E51;
-      height: 85%;
-      padding: 0 20px;
-
-      &__group{
-      padding: 20px 0;
-
-        &__name {
-          font-size: 15px;
-          color: $white;
-        }
-        &__message {
-          font-size: 11px;
-          color: $white;
-          padding: 5px 0px 0px 0px;
-        }
-      }
-    }
-  }
-
   .chat-main {
     background-color: #FAFAFA;
     width: calc(100% - 300px);
