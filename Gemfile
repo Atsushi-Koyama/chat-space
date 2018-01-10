@@ -12,6 +12,8 @@ gem 'puma', '~> 3.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Haml適応
 gem 'haml-rails'

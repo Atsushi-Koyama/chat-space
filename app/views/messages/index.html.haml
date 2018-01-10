@@ -32,8 +32,10 @@
 
   .chat-main__footer
     .chat-main__footer__form
-      %input.chat-main__footer__form__message{ type: "text", placeholder: "type a message"}
-      .chat-main__footer__form__image
-        = fa_icon "picture-o"
-    .chat-main__footer__form__send
-      = "Send"
+      = form_for [@group, @message] do |f|
+        .chat-main__footer__form__message
+          = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+          = f.label :image do
+            = f.file_field :image, class: 'hidden'
+            = fa_icon ('image'), class: 'image'
+          = f.submit 'Send', class: 'send'
