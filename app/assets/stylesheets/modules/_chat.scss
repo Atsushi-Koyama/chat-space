@@ -72,22 +72,22 @@ html, body{
       padding: 20px 40px 20px 40px;
       &__form {
         height: 50px;
-        width: calc(100% - 120px);
-        float: left;
         background-color: $white;
-        &__message {
+        .form__message {
         float: left;
         line-height: 50px;
         border-style: none;
-        width: 680px;
+        width: 720px;
         padding: 0 10px;
         }
-        &__image {
-        float: right;
-        line-height: 50px;
-        padding-right: 10px;
+        .hidden {
+        display: none;
         }
-        &__send {
+        .image {
+        margin: 15px 0  40px 0px;
+        font-size: 20px;
+        }
+        .send {
         height: 50px;
         float: right;
         color: $white;
@@ -96,6 +96,7 @@ html, body{
         padding: 0 30px;
         border-style: none;
         margin-left: 15px;
+        box-sizing: border-box;
         }
       }
     }
