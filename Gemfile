@@ -29,6 +29,7 @@ gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
 end
 
 group :development do
