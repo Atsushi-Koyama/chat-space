@@ -30,6 +30,9 @@ gem 'font-awesome-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
+  gem "factory_girl_rails"
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
 end
 
 group :development do
