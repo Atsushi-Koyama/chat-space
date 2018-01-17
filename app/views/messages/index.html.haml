@@ -13,22 +13,7 @@
           %p Edit
 
   .chat-main__body
-    .chat-main__body__message
-      %ul.chat-main__body__message__messages
-        %li.chat-main__body__message__messages__message
-          %p current_user.name
-        %li.chat-main__body__message__messages__date
-          %p 2018/01/03 04:43
-        %li.chat-main__body__message__messages__low-message
-          %p massage
-
-      %ul.chat-main__body__message__messages
-        %li.chat-main__body__message__messages__message
-          %p current_user.name
-        %li.chat-main__body__message__messages__date
-          %p 2018/01/03 04:43
-        %li.chat-main__body__message__messages__low-message
-          %p massage
+    = render @messages
 
   .chat-main__footer
     .chat-main__footer__form

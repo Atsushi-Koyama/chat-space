@@ -1,10 +1,12 @@
 class GroupsController < ApplicationController
+  before_action :set_users, only: [:new, :create]
+
+
   def index
   end
 
   def new
     @group = Group.new
-    @users = User.where.not(id: current_user.id)
   end
 
   def create
@@ -34,6 +36,10 @@ class GroupsController < ApplicationController
   private
   def group_params
     params.require(:group).permit(:name, user_ids: [] )
+  end
+
+  def set_users
+    @users = User.where.not(id: current_user)
   end
 
   def set_group

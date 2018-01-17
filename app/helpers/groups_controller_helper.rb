@@ -1,4 +1,4 @@
-module GroupsHelper
+module GroupsControllerHelper
 
   def show_last_message(group)
     if (last_message = group.messages.last).present?
@@ -9,3 +9,4 @@ module GroupsHelper
   end
 
 end
+
