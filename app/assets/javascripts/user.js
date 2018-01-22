@@ -51,12 +51,12 @@ $(function() {
     }
   });
   $("#user-search-result").on('click', ".user-search-add", function() {
-  $(this).parent().remove();
-    var user_name = $(this).data("user-name")
-    var user_id = $(this).data("user-id")
+    $(this).parent().remove();
+      var user_name = $(this).data("user-name")
+      var user_id = $(this).data("user-id")
     appendAdd(user_name, user_id);
   });
   $("#chat-group-users").on('click', ".user-search-remove", function() {
-  $(this).parent().remove();
+    $(this).parent().remove();
   });
 });
