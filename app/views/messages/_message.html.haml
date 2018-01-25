@@ -1,13 +1,14 @@
-.chat-main__body__message
-  %ul.chat-main__body__message__messages
-    %li.chat-main__body__message__messages__message
-      = message.user.name
-    %li.chat-main__body__message__messages__date
-      = message.created_at.to_s(:default)
-    %li.chat-main__body__message__messages__low-message
-      - if message.content.present?
-        %p
-          = message.content
-      - if message.image.present?
-        %p
-          = image_tag message.image.url
+.chat-main__body__content{ "data-message-id": "#{message.id}"}
+  .chat-main__body__message
+    %ul.chat-main__body__message__messages
+      %li.chat-main__body__message__messages__message
+        = message.user.name
+      %li.chat-main__body__message__messages__date
+        = message.created_at.to_s(:default)
+      %li.chat-main__body__message__messages__low-message
+        - if message.content.present?
+          %p
+            = message.content
+        - if message.image.present?
+          %p
+            = image_tag message.image.url
